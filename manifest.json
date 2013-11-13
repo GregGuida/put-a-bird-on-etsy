@@ -1,0 +1,17 @@
+{
+      "name": "etsy extension", 
+      "version": "1.0",
+      "description": "Put a bird on it!!",
+      "permissions": [
+      	"https://www.etsy.com/*",
+       	"http://www.etsy.com/*"   
+      ],
+      "content_scripts": [
+        {
+          "matches": ["https://www.etsy.com/*", "http://www.etsy.com/*" ],
+          "js": ["jquery.js", "myscript.js"],
+          "css": ["bird-styles.css"],
+          "run_at": "document_end"
+         }
+      ]
+}
